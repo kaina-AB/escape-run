@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0d0d0d, #330000);
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.screen {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.9);
+}
+
+#intro h1 {
+  font-size: 4rem;
+  color: #ff1c1c;
+  animation: fadeZoom 2s ease-in-out infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes fadeZoom {
+  from { transform: scale(1); opacity: 0.8; }
+  to { transform: scale(1.1); opacity: 1; }
+}
+
+.menu-btn {
+  background: #550000;
+  border: 2px solid #ff1c1c;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s;
+}
+
+.menu-btn:hover {
+  transform: scale(1.1);
+  background: #770000;
+}
+
+#popup {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #1a1a1a;
+  border: 2px solid #ff1c1c;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 300px;
+  position: relative;
+}
+
+#closePopup {
+  background: transparent;
+  color: #ff1c1c;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+#soundToggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #ff1c1c;
+  cursor: pointer;
+}
+
+/* Overlay de fade-out */
+#fadeOverlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  #intro h1 {
+    font-size: 2.5rem;
+  }
+  
+  .menu-btn {
+    width: 80%;
+
+    #soundToggle.muted {
+      opacity: 0.5;
+      transform: scale(0.8);
+    }
+    
+
+  }
+}
