@@ -9,8 +9,8 @@ const timerDisplay = document.getElementById('timer');
 let timer = 420; 
 let interval;
 
-const originalPhrase = "O passaro cantou";
-const cipheredPhrase = "O ?&]]&[+ cantou";
+const originalPhrase = "O cachorro latiu";
+const cipheredPhrase = "O #&#7+[[+ latiu";
 
 let userInputs = [];
 let attempts = 7;
@@ -91,7 +91,6 @@ submitBtn.addEventListener('click', () => {
     alert("Parabéns! Frase completa!");
     clearInterval(interval);
     bgMusic.pause();
-    window.location.href = 'jogofrase3.html';
   } else {
     attempts--;
     errorSound.play();
