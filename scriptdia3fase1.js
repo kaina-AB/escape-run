@@ -91,7 +91,7 @@ submitBtn.addEventListener('click', () => {
     alert("Parabéns! Frase completa!");
     clearInterval(interval);
     bgMusic.pause();
-    window.location.href = 'indexdia2fase0.html';
+    window.location.href = 'criptografar.html';
   } else {
     attempts--;
     errorSound.play();

@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Escape Run - dia 3</title>
-  <link rel="stylesheet" href="styledia3fase1.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Criptografe a Frase</title>
+  <link rel="stylesheet" href="criptografar.css" />
 </head>
 <body>
 
-<div id="intro" class="overlay">
-  <h1 id="intro-text">dia 3</h1>
-</div>
+  <div id="container">
 
-<div id="game" class="hidden">
-  <div id="phrase-display"></div>
+    <div id="desafio">
+      <h2>DIA 1</h2>
+      <p><strong>Mensagem original:</strong> vamos para a posição 42</p>
+      <p><strong>Criptografe a parte:</strong> <em>“vamos para a posição”</em></p>
+      <input type="text" id="resposta" placeholder="Digite aqui a criptografia..." />
+      <button id="verificar">Concluir</button>
+      <p id="feedback"></p>
+    </div>
 
-  <button id="submit">CONCLUIR</button>
+    <div id="timer">03:00</div>
 
-  <div id="timer">07:00</div>
-</div>
+    <div id="vitoria" class="hidden">
+      <h3>Parabéns! O cofre se abriu!</h3>
+    </div>
 
-<div id="blocos-notas">
+    <div id="blocos-notas">
   <p>alfabeto dia 1</p>
   <p>A = &</p>
   <p>B = 4</p>
@@ -79,15 +84,9 @@
   <p>Y = ~</p>
   <p>Z = :</p>
 </div>
+    
+  </div>
 
-
-
-
-<div id="gameover" class="overlay hidden">
-  <h1>Game Over</h1>
-  <button onclick="location.reload()">Jogar Novamente</button>
-</div>
-
-<script src="criptografar.html"></script>
+  <script src="criptografar.js"></script>
 </body>
 </html>
