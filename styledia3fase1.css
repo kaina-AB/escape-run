@@ -35,40 +35,28 @@ body {
   margin: 30px 0;
 }
 
-#bloco-notas1 {
+#blocos-notas {
   position: fixed;
-  top: 10px;
-  right: 10px;
-  width: 180px;
-  max-height: 90vh;
-  overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 10px;
-  font-family: monospace;
-  font-size: 14px;
-  border: 1px solid #900;
-  border-radius: 8px;
-  z-index: 1000;
-}
-
-#bloco-notas2 {
-  position: fixed;
-  top: 10px;
+  bottom: 10px;
   left: 10px;
-  width: 180px;
-  max-height: 90vh;
-  overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 10px;
-  font-family: monospace;
-  font-size: 14px;
-  border: 1px solid #900;
-  border-radius: 8px;
+  display: flex;
+  gap: 15px;
   z-index: 1000;
 }
 
+.bloco-notas {
+  width: 220px;
+  max-height: 35vh;
+  overflow-y: auto;
+  background-color: rgba(30, 0, 0, 0.9);
+  color: #ffdada;
+  padding: 10px 12px;
+  font-family: monospace;
+  font-size: 14px;
+  border: 1px solid #990000;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
+}
 
 
 .letter-box {
