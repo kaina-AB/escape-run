@@ -55,7 +55,7 @@ body {
 #bloco-notas2 {
   position: fixed;
   top: 10px;
-  right: 10px;
+  left: 10px;
   width: 180px;
   max-height: 90vh;
   overflow-y: auto;
