@@ -9,8 +9,8 @@ const timerDisplay = document.getElementById('timer');
 let timer = 420; 
 let interval;
 
-const originalPhrase = "ele é da turma";
-const cipheredPhrase = "ele é da ]{/^;";
+const originalPhrase = "O professor explicou";
+const cipheredPhrase = "O 0?(@#//(? explicou";
 
 let userInputs = [];
 let attempts = 7;
@@ -35,7 +35,7 @@ const timerSound = new Audio('timer.mp3'); // ou 'tick.mp3'
 
 function startIntro() {
   setTimeout(() => {
-    introText.textContent = "RESET CONCLUIDO";
+    introText.textContent = "O 0?(@#//(? explicou";
     setTimeout(() => {
       intro.classList.add('hidden');
       game.classList.remove('hidden');
@@ -91,7 +91,7 @@ submitBtn.addEventListener('click', () => {
     alert("Parabéns! Frase completa!");
     clearInterval(interval);
     bgMusic.pause();
-    window.location.href = 'indexdia2fase0.html';
+    window.location.href = 'indexdia2fase10.html';
   } else {
     attempts--;
     errorSound.play();
