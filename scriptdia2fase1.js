@@ -91,7 +91,7 @@ submitBtn.addEventListener('click', () => {
     alert("Parabéns! Frase completa!");
     clearInterval(interval);
     bgMusic.pause();
-    window.location.href = 'indexdia3fase1.html';
+    window.location.href = 'jogodia3fase1.html';
   } else {
     attempts--;
     errorSound.play();
