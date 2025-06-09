@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Escape Run</title>
+  <link rel="stylesheet" href="styledia2fase0.css">
+</head>
+<body>
+
+  <!-- Música de fundo -->
+  <audio id="bgMusic" src="sounds/background1.mp3" loop></audio>
+  <button id="soundToggle" aria-label="Toggle Sound"></button>
+
+  <!-- Música de instrução -->
+  <audio id="tutorialMusic" src="sounds/tutorial.mp3"></audio>
+
+  <!-- Tela inicial -->
+  <div id="intro" class="screen">
+    <h1>Você quer continuar para o dia 2?</h1>
+    <h1>Seu progresso ira resetar</h1>
+  </div>
+
+  <!-- Tela de opções -->
+  <div id="menu" class="screen hidden">
+    <button class="menu-btn" id="startBtn">Resetar Alfabeto</button>
+  </div>
+
+  <!-- Pop-up de instruções -->
+  <div id="popup" class="hidden">
+    <div class="popup-content">
+      <button id="closePopup">X</button>
+      <h2>Instruções</h2>
+      <p>Aqui vão as instruções escritas para quem não pode ouvir.</p>
+    </div>
+  </div>
+
+  <div id="fadeOverlay"></div>
+
+  <script src="scriptdia2fase0.js"></script>
+</body>
+</html>

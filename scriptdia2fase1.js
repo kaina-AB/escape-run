@@ -9,8 +9,8 @@ const timerDisplay = document.getElementById('timer');
 let timer = 420; 
 let interval;
 
-const originalPhrase = "O cachorro latiu";
-const cipheredPhrase = "O #&#7+[[+ latiu";
+const originalPhrase = "ele é da turma";
+const cipheredPhrase = "ele é da ]{/^;";
 
 let userInputs = [];
 let attempts = 7;
@@ -35,7 +35,7 @@ const timerSound = new Audio('timer.mp3'); // ou 'tick.mp3'
 
 function startIntro() {
   setTimeout(() => {
-    introText.textContent = "O #&#7+[[+ latiu";
+    introText.textContent = "RESET CONCLUIDO";
     setTimeout(() => {
       intro.classList.add('hidden');
       game.classList.remove('hidden');
