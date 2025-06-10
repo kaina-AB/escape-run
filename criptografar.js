@@ -11,7 +11,7 @@ let tempo = 180; // 3 minutos
 let intervalo;
 
 // Substitua por sua criptografia correta
-const respostaCorreta = "5$<~4 :$&$:~4[^$~ 42"; 
+const respostaCorreta = "5$<~4 :$&$ $ :~4[^$~ 42"; 
 
 function atualizarTimer() {
   const min = String(Math.floor(tempo / 60)).padStart(2, '0');
